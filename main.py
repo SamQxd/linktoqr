@@ -1,6 +1,6 @@
 import flask
 
-app = flask.Flask('main')
+app = flask.Flask(__name__, static_url_path='/static')
 
 @app.route('/')
 def index():
