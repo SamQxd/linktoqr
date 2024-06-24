@@ -1,4 +1,5 @@
 import qrcode
 
-img = qrcode.make('https://www.youtube.com')
+
+img = qrcode.make('idkbro')
 img.save("some_file.png")
