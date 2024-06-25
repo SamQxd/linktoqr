@@ -7,15 +7,16 @@
     </head>
 
     <body>
-        <div>
+        <div class="bro">
 
             <h1>Link to QR</h1><br>
             
             <form action="" method="post">
                 <input class="link" name="link" placeholder="Input the link">
             </form>
-            
-
 
         </div>
+
+        <img src="{{ url_for('static', filename='images/some_file.tiff') }}" class="qr">
+
     </body>
