@@ -12,11 +12,11 @@
             <h1>Link to QR</h1><br>
             
             <form action="" method="post">
-                <input class="link" name="link" placeholder="Input the link">
+                <input class="link" name="link" placeholder="Input a link">
             </form>
 
         </div>
 
-        <img src="{{ url_for('static', filename='images/some_file.tiff') }}" class="qr">
+        <a download="myqr.png" href="{{ url_for('static', filename='images/some_file.png') }}"><img src="{{ url_for('static', filename='images/some_file.png') }}" class="qr"></a>
 
     </body>
